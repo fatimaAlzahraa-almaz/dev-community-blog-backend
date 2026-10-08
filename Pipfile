@@ -12,6 +12,8 @@ pillow = "*"
 psycopg = "*"
 django-filter = "*"
 python-dotenv = "*"
+dj-database-url = "*"
+gunicorn = "*"
 
 [dev-packages]
 
