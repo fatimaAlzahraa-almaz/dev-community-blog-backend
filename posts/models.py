@@ -17,7 +17,7 @@ class Post(models.Model):
     content=models.TextField()
     author=models.ForeignKey(User,on_delete=models.CASCADE,related_name='posts')
     category=models.ForeignKey(Category,on_delete=models.PROTECT,related_name='posts')
-    img=models.ImageField(upload_to='post_images/',blank=True,null=True)
+    img=models.ImageField(upload_to='post_images/',blank=True,null=True , max_length=255,)
     posted_at=models.DateTimeField(auto_now_add=True)
     
     def save(self, *args, **kwargs):
