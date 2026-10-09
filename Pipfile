@@ -14,6 +14,7 @@ django-filter = "*"
 python-dotenv = "*"
 dj-database-url = "*"
 gunicorn = "*"
+django-cloudinary-storage = "*"
 
 [dev-packages]
 
