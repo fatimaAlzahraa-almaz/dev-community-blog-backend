@@ -7,7 +7,7 @@ class User(AbstractUser):
     email=models.EmailField(unique=True)
     name=models.CharField(max_length=100)
     bio=models.TextField(blank=True)
-    profile_img=models.ImageField(upload_to='profile_images/',blank=True,null=True)
+    profile_img=models.ImageField(upload_to='profile_images/',blank=True,null=True, max_length=255,)
     
     def __str__(self):
         return self.username
